@@ -3,57 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File HTML Index</title>
-    <style>
-
-        body {
-            font-family: Arial,  sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-        }
-
-        header {
-            background: #8017cc;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .main {
-            background: #ffffff;
-            padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-    </style>
+    <title>Form HTML</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
-        <h1>Media Online</h1>
-    </header>
+
     <div class="container">
-        <main class="main">
-            <h2>Sosial Media Developer</h2>
-            <p>Belajar dan berbagi agar hidup menjadi lebih baik</p>
-            <h3>Benefit Join Di Media</h3>
-            <ul>
-                <li>Mendapatkan motivasi dari sesama para Developer</li>
-                <li>Sharing Knowledge</li>
-                <li>Dibuat oleh calon web Developer terbaik</li>
-            </ul>
-            <h3>Cara Bergabung Ke Media Online</h3>
-            <ol>
-                <li>Mengunjungi Website Ini</li>
-                <li>Mendaftarkan di <a href="form.html">Form Sign Up</a></li>
-                <li>Selesai</li>
-            </ol>
-        </main>
+        <form action="" class="signup-form" >
+            <h1>Buat Account Baru</h1> 
+            <h3>Sign Up Form</h3>
+            
+            <input type="text" id="first-name" name="first-name" placeholder="First Name">
+
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+            
+            <div class="gender-options">
+                <input type="radio" name="gender" value="Male" id="male"> <span>Male</span>
+                <input type="radio" name="gender" value="Female" id="female"> <span>Female</span>
+            </div>
+
+            <select name="nationality" id="nationality">
+                <option value="Indonesia">Indonesia</option>
+                <option value="Inggris">Inggris</option>
+            </select>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="language" value="Bahasa Indonesia" id="bahasa-indonesia"> 
+                <span>Bahasa Indonesia</span><br>
+                
+                <input type="checkbox" name="language" value="English" id="english"> 
+                <span>English</span><br>
+                
+                <input type="checkbox" name="language" value="Other" id="other"> 
+                <span>Other</span><br>
+            </div>
+
+            <textarea rows="4" cols="50"></textarea>
+
+            <div class="submit-button">
+                <a href="welcome.html">
+                    <input type="button" value="Sign Up">
+                </a>
+            </div>
+        </form>
     </div>
+
 </body>
 </html>
